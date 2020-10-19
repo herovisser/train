@@ -73,19 +73,19 @@ p {
     height: 30px;
     padding-top: 10px;
     background: #fff;
-    color: #c1d72e;
+    color: #00ff00;
     cursor: pointer;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -khtml-border-radius: 5px;
-    border: solid 1px #fff;
+    border: solid 1px #000;
 }
 
 #alphabet li:hover {
-    background: #c1d72e;
-    border: solid 1px #fff;
-    color: #fff;
+    background: #00ff00;
+    border: solid 1px #000;
+    color: #000;
 }
 
 #my-word {
