@@ -43,11 +43,11 @@ window.onload = function() {
     // Select Catagory
     var selectCat = function() {
         if (chosenCategory === categories[0]) {
-            catagoryName.innerHTML = "The Chosen Category Is Premier League Football Teams";
+            catagoryName.innerHTML = "We gaan voor het account van Kevin. Hij is een sales medewerker met als hobby de Formule 1";
         } else if (chosenCategory === categories[1]) {
-            catagoryName.innerHTML = "The Chosen Category Is Films";
+            catagoryName.innerHTML = "We gaan voor het account van Chantal. Zij is een HR medewerker en is echte dierenliefhebber";
         } else if (chosenCategory === categories[2]) {
-            catagoryName.innerHTML = "The Chosen Category Is Cities";
+            catagoryName.innerHTML = "We gaan voor het account van Mischa. Hij is een logistiek medewerker en is pas op vakantie naar Rome geweest";
         }
     }
 
@@ -184,9 +184,9 @@ window.onload = function() {
     // Play
     play = function() {
         categories = [
-            ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-            ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
-            ["manchester", "milan", "madrid", "amsterdam", "prague"]
+            ["max verstappen", "redbull", "vettel", "ferrari", "hamilton", "mercedes", "racing point"], //f1
+            ["krokodillen", "kakatoe", "antilope", "aasgier", "dwerggeit"], //dieren
+            ["pepperoni", "vaticaanstad", "keizer cesar", "romeinen", "sixtijnse kapel"] //rome
         ];
 
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -212,9 +212,9 @@ window.onload = function() {
     hint.onclick = function() {
 
         hints = [
-            ["Based in Mersyside", "Based in Mersyside", "First Welsh team to reach the Premier Leauge", "Owned by A russian Billionaire", "Once managed by Phil Brown", "2013 FA Cup runners up", "Gazza's first club"],
-            ["Science-Fiction horror film", "1971 American action film", "Historical drama", "Anamated Fish", "Giant great white shark"],
-            ["Northern city in the UK", "Home of AC and Inter", "Spanish capital", "Netherlands capital", "Czech Republic capital"]
+            ["Zoon van Jos", "Rood met hoorns", "welke duitser rijd er in de F1", "Team in mooi rood", "Huidig wereldkampioen", "Zilveren pijl", "racende punt"],
+            ["Groen, grote bek met tandjes ", "Mooi gekleurde vleugels", "Loopt hard op de savanne", "Cirkelt rond en loert op zijn kans ", "Klein en schreeuwt op de kinderboederij"],
+            ["Lekker worstje op de pizza", "leuk zeg een stad in een stad", "Was ooit de baas", "Raar volk die ...", "Mooi koepeltje"]
         ];
 
         var catagoryIndex = categories.indexOf(chosenCategory);
