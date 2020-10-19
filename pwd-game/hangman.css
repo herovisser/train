@@ -67,6 +67,7 @@ p {
 #alphabet {
     /* font-family: 'VT323', monospace;*/
     font-family: 'Press Start 2P', cursive;
+    padding-inline-start: 0px;
 }
 
 #alphabet:after {
