@@ -53,6 +53,12 @@ p {
     font-size: 1em;
 }
 
+.loginConsole {
+    padding: 50px;
+    background-color: grey;
+    border-radius: 15px;
+}
+
 #alphabet {
     /* font-family: 'VT323', monospace;*/
     font-family: 'Press Start 2P', cursive;
