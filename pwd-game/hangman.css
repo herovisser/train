@@ -4,6 +4,7 @@
 /* Mixin's */
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
     background: rgb(0, 168, 225);
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -53,7 +54,8 @@ p {
 }
 
 #alphabet {
-    font-family: 'VT323', monospace;
+    /* font-family: 'VT323', monospace;*/
+    font-family: 'Press Start 2P', cursive;
     margin: 15px auto;
     max-width: 725px;
     background-color: black;
