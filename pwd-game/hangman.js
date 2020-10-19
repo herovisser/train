@@ -222,7 +222,8 @@ window.onload = function() {
 
         var catagoryIndex = categories.indexOf(chosenCategory);
         var hintIndex = chosenCategory.indexOf(word);
-        showClue.innerHTML = "Clue: - " + hints[catagoryIndex][hintIndex];
+        alert("Hier is je wachtwoordhulp" + hints[catagoryIndex][hintIndex]);
+
     };
 
     // Reset
