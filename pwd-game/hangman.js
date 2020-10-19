@@ -195,7 +195,7 @@ window.onload = function() {
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
         word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
         word = word.replace(/\s/g, "-");
-        console.log(word);
+        //  console.log(word);
         buttons();
 
         geusses = [];
