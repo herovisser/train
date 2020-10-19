@@ -83,11 +83,15 @@ window.onload = function() {
             showLives.innerHTML = "Je bent betrapt!!!!";
 
             var x = document.getElementById("busted");
+            x.innerHTML = "Je bent betrapt, je ip-adres is gelogd voor verder onderzoek";
             x.style.display = "block";
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
                 showLives.innerHTML = "GELUKT: Je bent binnen";
+                var x = document.getElementById("busted");
+                x.innerHTML = "Gefeliciteerd, je bent binnen!! Weet je nog een goede beveiliger voor ons?";
+                x.style.display = "block";
             }
         }
     }
@@ -235,6 +239,7 @@ window.onload = function() {
         letters.parentNode.removeChild(letters);
         showClue.innerHTML = "";
         var x = document.getElementById("busted");
+        x.innerHTML = "";
         x.style.display = "none";
         context.clearRect(0, 0, 400, 400);
         play();
