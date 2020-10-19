@@ -145,6 +145,15 @@ p {
 
 #busted {
     display: none;
+    position: absolute;
+    width: 99%;
+    height: 101px;
+    background-color: black;
+    border-radius: 15px;
+    color: red;
+    z-index: 9;
+    font-size: 30px;
+    padding: 210px 0px;
 }
 
 button {
