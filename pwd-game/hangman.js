@@ -187,9 +187,9 @@ window.onload = function() {
     // Play
     play = function() {
         categories = [
-            ["max verstappen", "redbull", "vettel", "ferrari", "hamilton", "mercedes", "racing point"], //f1
+            ["verstappen", "redbull", "vettel", "ferrari", "hamilton", "mercedes", "renault"], //f1
             ["krokodillen", "kakatoe", "antilope", "aasgier", "dwerggeit"], //dieren
-            ["pepperoni", "vaticaanstad", "keizer cesar", "romeinen", "sixtijnse kapel"] //rome
+            ["pepperoni", "vaticaanstad", "keizer cesar", "romeinen"] //rome
         ];
 
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -215,15 +215,14 @@ window.onload = function() {
     hint.onclick = function() {
 
         hints = [
-            ["Zoon van Jos", "Rood met hoorns", "welke duitser rijd er in de F1", "Team in mooi rood", "Huidig wereldkampioen", "Zilveren pijl", "racende punt"],
+            ["Max en Jos", "Rood met hoorns", "welke duitser rijd er in de F1", "Team in mooi rood", "Huidig wereldkampioen", "Zilveren pijl", "op het cirquit en op de weg"],
             ["Groen, grote bek met tandjes ", "Mooi gekleurde vleugels", "Loopt hard op de savanne", "Cirkelt rond en loert op zijn kans ", "Klein en schreeuwt op de kinderboederij"],
-            ["Lekker worstje op de pizza", "leuk zeg een stad in een stad", "Was ooit de baas", "Raar volk die ...", "Mooi koepeltje"]
+            ["Lekker worstje op de pizza", "leuk zeg een stad in een stad", "Was ooit de baas", "Raar volk die ..."]
         ];
 
         var catagoryIndex = categories.indexOf(chosenCategory);
         var hintIndex = chosenCategory.indexOf(word);
-        alert("Hier is je wachtwoordhulp" + hints[catagoryIndex][hintIndex]);
-        showClue.innerHTML = " " + hints[catagoryIndex][hintIndex];
+        showClue.innerHTML = "Wachtwoord hulp: " + hints[catagoryIndex][hintIndex];
     };
 
     // Reset
