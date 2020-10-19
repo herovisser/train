@@ -82,6 +82,8 @@ window.onload = function() {
         if (lives < 1) {
             showLives.innerHTML = "Je bent betrapt!!!!";
 
+            var x = document.getElementById("busted");
+            x.style.display = "block";
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
@@ -232,6 +234,8 @@ window.onload = function() {
         correct.parentNode.removeChild(correct);
         letters.parentNode.removeChild(letters);
         showClue.innerHTML = "";
+        var x = document.getElementById("busted");
+        x.style.display = "none";
         context.clearRect(0, 0, 400, 400);
         play();
     }
