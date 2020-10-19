@@ -143,6 +143,10 @@ p {
     display: block;
 }
 
+#busted {
+    display: none;
+}
+
 button {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
