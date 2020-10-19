@@ -44,10 +44,13 @@ window.onload = function() {
     var selectCat = function() {
         if (chosenCategory === categories[0]) {
             catagoryName.innerHTML = "We gaan voor het account van Kevin. Hij is een sales medewerker met als hobby de Formule 1";
+            document.getElementById("username").innerHTML = "Kevin";
         } else if (chosenCategory === categories[1]) {
             catagoryName.innerHTML = "We gaan voor het account van Chantal. Zij is een HR medewerker en is echte dierenliefhebber";
+            document.getElementById("username").innerHTML = "Chantal";
         } else if (chosenCategory === categories[2]) {
             catagoryName.innerHTML = "We gaan voor het account van Mischa. Hij is een logistiek medewerker en is pas op vakantie naar Rome geweest";
+            document.getElementById("username").innerHTML = "Mischa";
         }
     }
 
