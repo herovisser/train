@@ -55,8 +55,10 @@ p {
 #alphabet {
     font-family: 'VT323', monospace;
     margin: 15px auto;
-    padding: 0;
-    max-width: 650px;
+    max-width: 725px;
+    background-color: black;
+    padding: 42px;
+    border-radius: 15px;
 }
 
 #alphabet:after {
@@ -69,15 +71,16 @@ p {
     float: left;
     margin: 0 10px 10px 0;
     list-style: none;
-    width: 35px;
-    height: 30px;
-    padding-top: 10px;
+    width: 45px;
+    height: 40px;
+    padding: 7px;
     background: #fff;
     color: #00ff00;
     cursor: pointer;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    font-size: 40px;
     -khtml-border-radius: 5px;
     border: solid 1px #000;
 }
