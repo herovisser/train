@@ -78,13 +78,13 @@ window.onload = function() {
 
     // Show lives
     comments = function() {
-        showLives.innerHTML = "Nog " + lives + " pogingen over";
+        showLives.innerHTML = "Lukt het you om het wachtwoord binnen " + lives + "x te kraken";
         if (lives < 1) {
-            showLives.innerHTML = "Betrapt";
+            showLives.innerHTML = "Je bent betrapt!!!!";
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
-                showLives.innerHTML = "Je bent binnen";
+                showLives.innerHTML = "GELUKT: Je bent binnen";
             }
         }
     }
