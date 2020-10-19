@@ -81,6 +81,7 @@ window.onload = function() {
         showLives.innerHTML = "Lukt het you om het wachtwoord binnen " + lives + "x te kraken";
         if (lives < 1) {
             showLives.innerHTML = "Je bent betrapt!!!!";
+
         }
         for (var i = 0; i < geusses.length; i++) {
             if (counter + space === geusses.length) {
@@ -199,7 +200,7 @@ window.onload = function() {
         buttons();
 
         geusses = [];
-        lives = 10;
+        lives = 5;
         counter = 0;
         space = 0;
         result();
