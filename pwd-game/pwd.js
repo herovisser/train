@@ -14,7 +14,7 @@ window.onload = function() {
     var lives; // Lives
     var counter; // Count correct geusses
     var space; // Number of spaces in word '-'
-    var
+    var ip;
 
     // Get elements
     var showLives = document.getElementById("mylives");
