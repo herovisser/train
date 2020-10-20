@@ -201,12 +201,12 @@ window.onload = function() {
         categories = [
             ["verstappen", "redbull", "vettel", "ferrari", "hamilton", "mercedes", "renault"], //f1
             ["krokodillen", "kakatoe", "antilope", "aasgier", "dwerggeit"], //dieren
-            ["pepperoni", "vaticaanstad", "keizer cesar", "romeinen"] //rome
+            ["pepperoni", "vaticaanstad", "colosseum", "romeinen"] //rome
         ];
 
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
         word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
-        //word = word.replace(/\s/g, "-");
+        word = word.replace(/\s/g, "-");
         // console.log(word);
         buttons();
 
@@ -229,7 +229,7 @@ window.onload = function() {
         hints = [
             ["Max en Jos", "Rood met hoorns", "welke duitser rijd er in de F1", "Team in mooi rood", "Huidig wereldkampioen", "Zilveren pijl", "op het cirquit en op de weg"],
             ["Groen, grote bek met tandjes ", "Mooi gekleurde vleugels", "Loopt hard op de savanne", "Cirkelt rond en loert op zijn kans ", "Klein en schreeuwt op de kinderboederij"],
-            ["Lekker worstje op de pizza", "leuk zeg een stad in een stad", "Was ooit de baas", "Raar volk die ..."]
+            ["Lekker worstje op de pizza", "leuk zeg een stad in een stad", "Brood en spelen", "Raar volk die ..."]
         ];
 
         var catagoryIndex = categories.indexOf(chosenCategory);
