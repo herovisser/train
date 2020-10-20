@@ -162,7 +162,7 @@ button {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -khtml-border-radius: 5px;
-    background: #c1d72e;
+    background: #007197;
     color: #fff;
     border: solid 1px #fff;
     text-decoration: none;
@@ -180,7 +180,7 @@ button:hover {
     transition: all 0.3s ease-in-out;
     background: #fff;
     border: solid 1px #fff;
-    color: #c1d72e;
+    color: #007197;
 }
 
 @media (max-width: 767px) {
