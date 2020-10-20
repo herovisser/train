@@ -14,6 +14,7 @@ window.onload = function() {
     var lives; // Lives
     var counter; // Count correct geusses
     var space; // Number of spaces in word '-'
+    var
 
     // Get elements
     var showLives = document.getElementById("mylives");
@@ -78,12 +79,15 @@ window.onload = function() {
 
     // Show lives
     comments = function() {
+
         showLives.innerHTML = "Lukt het you om het wachtwoord binnen " + lives + "x te kraken";
         if (lives < 1) {
             showLives.innerHTML = "Je bent betrapt!!!!";
-
+            $.getJSON("https://api.ipify.org?format=json", function(data) {
+                ip = data.ip
+            })
             var x = document.getElementById("busted");
-            x.innerHTML = "Je bent betrapt, je ip-adres is gelogd voor verder onderzoek";
+            x.innerHTML = "Je bent betrapt, je ip-adres" + ip + " is gelogd voor verder onderzoek";
             x.style.display = "block";
         }
         for (var i = 0; i < geusses.length; i++) {
