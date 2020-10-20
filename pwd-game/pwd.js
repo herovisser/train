@@ -81,13 +81,14 @@ window.onload = function() {
     comments = function() {
 
         showLives.innerHTML = "Lukt het you om het wachtwoord binnen " + lives + "x te kraken";
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            ip = data.ip
+        })
         if (lives < 1) {
             showLives.innerHTML = "Je bent betrapt!!!!";
-            $.getJSON("https://api.ipify.org?format=json", function(data) {
-                ip = data.ip
-            })
+
             var x = document.getElementById("busted");
-            x.innerHTML = "Je bent betrapt, je ip-adres" + ip + " is gelogd voor verder onderzoek";
+            x.innerHTML = "Je bent betrapt, je ip-adres: " + ip + " is gelogd voor verder onderzoek";
             x.style.display = "block";
         }
         for (var i = 0; i < geusses.length; i++) {
